@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: #545454;
+}
+.navbar__header {
+    background: #545454;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+    border-bottom: 0.3rem solid #6baa75;
+}
+.navbar__btn {
+    align-self: center;
+    border: 5px solid #6baa75;
+    cursor: pointer;
+}
+.bar1, .bar2, .bar3 {
+    width: 30px;
+    height: 5px;
+    margin: 0.5rem;
+    background: #6baa75;
+    transition: all 1s ease;
+}
+.change .bar1 {
+    transform: rotate(-45deg) translate(-10px, 10px);
+}
+.change .bar2 {
+    opacity: 0;
+}
+.change .bar3 {
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+.navbar__links {
+    list-style-type: none;
+    transition: all 1s ease;
+    height: 0;
+    overflow: hidden;
+}
+.navbar__collapse {
+    height: 300px;
+}
+.navbar__single-link {
+    display: block;
+    background: #69747c;
+    padding: 1rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #6baa75;
+    transition: all 1s ease;
+    cursor: pointer;
+}
+.navbar__single-link:hover {
+    padding-left: 1.5rem;
+    background: #545454;
+}
+
+/* Kode for kalkulatoren */
+
+.calculator {
+    flex: 0 0 40%;
+    width: 50%;
+}
+.screen {
+    width: 100%;
+    font-size: 7rem;
+    padding: 0.5rem;
+    background: rgb(41, 41, 56);
+    color: white;
+    border: none;
+}
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    transition: all 0.5s linear;
+}
+button {
+    flex: 0 0 25%;
+    /*border: 1px solid black;*/
+    padding: 0.25rem 0;
+    transition: all 1s ease;
+}
+button:hover {
+    cursor: pointer;
+}
+.btn-yellow {
+    background: rgb(245, 146, 62);
+    color: white;
+}
+.btn-yellow:hover {
+    background: rgb(199, 119, 50);
+}
+.btn-grey {
+    background: rgb(224, 224, 224);
+}
+.btn-grey:hover {
+    background: rgb(189, 183, 183);
+}
+.btn, .btn-equal, .btn-clear {
+    font-size: 3rem;
+}
+.btn-equal {
+    background: green;
+}
+.btn-equal:hover {
+    background: rgb(1, 99, 1);
+}
+.btn-clear {
+    background: red;
+}
+.btn-clear:hover {
+    background: rgb(189, 2, 2);
+}
+/* Kode for klokka */
+
+#clock {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2rem;
+    color: #6baa75;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Login */
+
+.login {
+    font-size: 1rem;
+    font-family: 'Orbitron', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+    margin-top: 11.5px; 
+    padding: 0.5rem 3rem;
+}
+
+.login:hover {
+    cursor: pointer;
+}
+
+.loginLink {
+    text-decoration: none;
+}
+
+/* Social media */
+
+.socialM.fab {
+    margin-top: 11.5px;
+}
+
+.fa-facebook {
+    color: white;
+}
+
+.fa-twitter {
+    color: white;
+}
+
+.fa-linkedin-in {
+    color: white;
+}
+
+.socialM.fab:hover {
+    opacity: 0.7;
+}

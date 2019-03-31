@@ -99,6 +99,8 @@ body {
     text-align: center;
     padding: 1rem;
     font-weight: bold;
+    margin-left: 25%;
+    margin-right: 25%;
 }
 .counter {
     font-size: 6rem;

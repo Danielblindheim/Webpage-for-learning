@@ -3,33 +3,59 @@
     padding: 0;
     box-sizing: border-box;
 }
+body {
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    /*background: #545454;*/
+    flex: 0 0 80%;
+    background: #000 url("img/bcg-2.jpg")center no-repeat;
+}
 .navbar__header {
-    background: #545454;
+    /*background: #545454;*/
+    background: transparent;
     display: flex;
     justify-content: space-between;
     padding: 0.5rem 1rem;
-    border-bottom: 0.3rem solid #6baa75;
+    /*border-bottom: 0.3rem solid #6baa75;*/
+}
+
+.navbar__logo {
+    margin-top: 5px;
+}
+#myLogo {
+    outline: none;
+    color: white;
+    margin-top: 13.5px;
+    margin-left: 10px;
+    font-size: 2rem;
+    font-family: orbitron;
+}
+#logoo {
+    text-decoration: none;
 }
 .navbar__btn {
     align-self: center;
-    border: 5px solid #6baa75;
+    /*border: 5px solid #6baa75;*/
+    border: 5px solid #fff;
     cursor: pointer;
 }
 .bar1, .bar2, .bar3 {
     width: 30px;
     height: 5px;
     margin: 0.5rem;
-    background: #6baa75;
+    /*background: #6baa75;*/
+    background: #fff;
     transition: all 1s ease;
 }
 .change .bar1 {
-    transform: rotate(-45deg) translate(-10px, 10px);
+    transform: rotate(-45deg) translate(-9px, 9px);
 }
 .change .bar2 {
     opacity: 0;
 }
 .change .bar3 {
-    transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-9px, -9px);
 }
 .navbar__links {
     list-style-type: none;
@@ -37,43 +63,36 @@
     /* */
     height: 0;
     overflow: hidden;
+    position: absolute;
 }
 .navbar__collapse {
-    height: 300px;
+    height: 240px;
+    background: transparent;
+    position: absolute;
 }
+
 .navbar__single-link {
     display: block;
-    background: #69747c;
+    /*background: #69747c;*/
+    /*background: black;*/
     padding: 1rem;
     font-size: 1.5rem;
     text-decoration: none;
     text-transform: capitalize;
-    color: #6baa75;
+    /*color: #6baa75;*/
+    color: #fff;
     transition: all 1s ease;
     cursor: pointer;
 }
 .navbar__single-link:hover {
     padding-left: 1.5rem;
-    background: #545454;
+    /*background: #545454;*/
+    /*background: rgb(12, 12, 12);*/
+    opacity: 0.7;
 }
 
+/* To do list */
 
-
-
-body {
-    background: #545454;
-    align-items: center;
-    justify-content: center;
-}
-.intro {
-    margin: 30px 0px;
-    font-weight: bold;
-}
-h1 {
-    color: #ffffff;
-    text-transform: uppercase;
-    font-weight: 800;
-}
 p {
     font-weight: 600;
 }
@@ -82,7 +101,8 @@ p {
     padding: 5px 15px;
     border-radius: 5px;
     color: #FFF;
-    background-color: #6baa75;
+    /*background-color: #6baa75;*/
+    background-color: rgb(29, 28, 28);
     transition: all 0.75s ease;
     -webkit-transition: all 0.75s ease;
     -moz-transition: all 0.75s ease;
@@ -92,13 +112,17 @@ p {
     outline: none;
 }
 #enter:hover {
-    background-color: #5d9667;
-    color: #FFCD5D;
+    /*background-color: #5d9667;*/
+    background-color: #fff;
+    /*color: #FFCD5D;*/
+    color: black;
     cursor: pointer;
 }
 #todo {
     text-align: left;
-    margin-top: 20px;
+}
+.inputBox {
+    margin-bottom: 20px;
 }
 #todo li {
     list-style: none;
@@ -106,18 +130,24 @@ p {
     color: #ffffff;
     text-transform: capitalize;
     font-weight: 600;
-    border: 2px solid #6baa75;
+    /*border: 2px solid #6baa75;*/
+    border: 2px solid #fff;
     border-radius: 5px;
-    margin-bottom: 10px;
-    background: #545454;
+    margin-bottom: 5px;
+    /*background: #545454;*/
+    background: grey;
+    opacity: 0.8;
     transition: all 0.75s ease;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -ms-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
+    margin-left: 23%;
+    margin-right: 23%;
 }
 #todo li:hover {
-    background: #3f3d3d;
+    /*background: #3f3d3d;*/
+    opacity: 1;
     cursor: pointer;
 }
 #todo li > button {
@@ -126,19 +156,23 @@ p {
     border: solid;
     padding: 1px 7px;
     float: right;
-    color: #8ce09a;
+    color: #000;
+    /*color: #8ce09a;*/
     font-weight: 800;
     cursor: pointer;
-    border: 3px solid #6baa75;
+    /*border: 3px solid #6baa75;*/
+    border: 3px solid #fff;
     border-radius: 3px;
     outline: none;
 }
 #todo li > button:hover {
-    background: #6baa75;
+    /*background: #6baa75;*/
+    background: #fff;
+    color: #000;
 }
 input {
     border-radius: 5px;
-    min-width: 65%;
+    min-width: 50%;
     padding: 5px;
     border: none;
     outline: none;
@@ -147,11 +181,14 @@ input {
     background: #6baa75 !important;
 }
 .done button {
-    border: 3px solid #538a5d !important;
-    color: #8ce09a !important;
+    /*border: 3px solid #538a5d !important;*/
+    /*color: #8ce09a !important;*/
+    border: 3px solid #fff;
+
 }
 .done button:hover {
-    background: #538a5d !important;
+    /*background: #538a5d !important;*/
+    background: #fff;
 }
 .delete {
     display: none;
@@ -159,18 +196,7 @@ input {
 .container {
     text-align: center;
     font-family: "Open Sans", sans-serif;
-    margin: 20px;
-}
-
-/* Kode for klokka */
-
-#clock {
-    font-family: 'Orbitron', sans-serif;
-    font-size: 2rem;
-    color: #6baa75;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    /*margin: 20px;*/
 }
 
 /* Login */

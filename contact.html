@@ -84,17 +84,17 @@
 
 <div id="contactBody">
     <div class="contact-title">
-        <h1>Let's get in touch!</h1>
+        <h1>Let's get in touch</h1>
     </div>
 
     <div class="contact-form">
-        <form id="contact-form" method="post" action="config.php">
+        <form id="contact-form" method="post" action="contact.php">
             <input name="name" type="text" class="form-control" placeholder="Your name" required>
             <br>
             <input name="email" type="email" class="form-control" placeholder="Your email" required>
             <br>
 
-            <textarea name="message" class="form-control" placeholder="Message" row="4" required></textarea>
+            <textarea id="messageId" name="message" class="form-control" placeholder="Message" row="4" required></textarea>
             <br>
 
             <input type="submit" class="form-control submit" id="submitted" value="SEND MESSAGE">

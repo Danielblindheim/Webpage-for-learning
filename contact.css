@@ -165,12 +165,12 @@ body {
 .contact-title {
     margin-top: 30px;
     color: #fff;
-    text-transform: uppercase;
+    text-transform: capitalize;
     transition: all 4s ease-in-out;
 }
 
 .contact-title h1 {
-    font-size: 32px;
+    font-size: 28px;
     line-height: 50px;   
 }
 
@@ -180,7 +180,7 @@ form {
 }
 
 .form-control {
-    width: 600px;
+    width: 40%;
     background: transparent;
     border: none;
     outline: none;
@@ -192,6 +192,10 @@ form {
 
 input {
     height: 45px;
+}
+
+#messageId {
+    height: 135px;
 }
 
 form .submit {

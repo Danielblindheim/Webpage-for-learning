@@ -1,2 +1,2 @@
 # Webpage-for-learning
-Webpage that I work on to learn basics
+This is a project that I am doing to practice html, css, javascript mainly. I will also be applying php and other things to this project, and redirect my learning to this project, to be able to showcase it.

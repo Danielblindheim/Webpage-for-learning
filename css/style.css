@@ -9,7 +9,7 @@ body {
     justify-content: center;
     /*background: #545454;*/
     flex: 0 0 80%;
-    background: #000 url("img/bcg-2.jpg")center no-repeat;
+    background: #000 url("../img/bcg-2.jpg")center no-repeat;
 }
 .navbar__header {
     /*background: #545454;*/

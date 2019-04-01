@@ -13,7 +13,7 @@ navbarBtn.addEventListener("click", function() {
     }
 })
 
-// To-Do List herfra
+// To-Do List from here
 
 let enterButton = document.getElementById("enter");
 let input = document.getElementById("userInput");

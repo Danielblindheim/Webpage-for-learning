@@ -24,7 +24,7 @@
     </div>
 
     <div class="contact-form">
-        <form id="contact-form" method="post" action="./sendemail.php">
+        <form id="contact-form" method="post" action="./includes/sendemail.inc.php">
             <input name="name" type="text" class="form-control" placeholder="Your name" required>
             <br>
             <input name="email" type="email" class="form-control" placeholder="Your email" required>
@@ -39,6 +39,10 @@
     </div>
 </div>
 
-    <script src="../js/contact.js"></script>
+<?php
+    require "footer.php";
+?>
+
+    <script src="../js/menu.js"></script>
 </body>
 </html>

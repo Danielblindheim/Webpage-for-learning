@@ -52,7 +52,10 @@
     </section>
 
     </center>
-    
+
+<?php
+    require "footer.php";
+?>
     <script src="../js/calc.js"></script>
 </body>
 </html>

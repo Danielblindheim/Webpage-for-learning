@@ -1,3 +1,6 @@
+<head>
+    <title>Sign up</title>
+</head>
 <?php
     require "header.php";
 ?>

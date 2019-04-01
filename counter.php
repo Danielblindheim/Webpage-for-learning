@@ -28,6 +28,11 @@
         </div>
     </div>
 
+
+    <?php
+        require "footer.php";
+    ?>
+
     <script src="../js/counter.js"></script>
 </body>
 

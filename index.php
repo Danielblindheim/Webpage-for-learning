@@ -32,6 +32,9 @@
              <h3 id="quoteAuthor">author of the quote</h3>
          </div>
 
+<?php
+    require "footer.php";
+?>
     <script src="../js/script.js"></script>
 </body>
 </html>

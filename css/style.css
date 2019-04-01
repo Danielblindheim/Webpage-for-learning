@@ -3,6 +3,19 @@
     padding: 0;
     box-sizing: border-box;
 }
+/*
+FOOTER CSS
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: rgb(54, 53, 53);
+    opacity: 0.4;
+    color: white;
+    text-align: center;
+    padding: 5px;
+}*/
 body {
     min-height: 100vh;
     align-items: center;

@@ -21,7 +21,7 @@
 
     mail($to,$email_subject,$email_body,$headers);
 
-    header("Location: ../html/contact.php");
+    header("Location: ./contact.php");
 
 
 ?>

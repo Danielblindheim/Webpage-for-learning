@@ -1,3 +1,6 @@
+<?php
+    session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <title>Log In</title>
+    <title></title>
 
     <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
 
@@ -14,14 +17,10 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 </head>
 <body>
+    <header>
         <nav class="navbar">
                 <div class="navbar__header">
-                        <a href="./index.html" id="logoo"><h1 id="myLogo">Daniel Blindheim</h1></a>
-                        <!--<a href="#"><img src="./img/logo.jpg" class="navbar__logo" alt="My logo"></a>-->
-        
-                      <!-- Klokke -->
-            <!--<div id="clock"></div>-->
-            <!-- Klokke -->
+                        <a href="./index.php" id="logoo"><h1 id="myLogo">Daniel Blindheim</h1></a>
 
              <!-- Social Media -->
              <a href="https://www.facebook.com/daniel.blindheim" target="_blank">
@@ -35,17 +34,17 @@
                 </a>
                 <!-- Social Media -->
 
-                   <!-- Login -->
-            <a href="#" class="loginLink">
-                <button type="button" class="login" id="loginBtn">Login</button>
-            </a>
-            <!-- Login -->
+                <!-- Login -->
+                <a href="./login.php" class="loginLink">
+                    <button type="button" class="login" id="login">Login</button>
+                </a>
+                <!-- Login -->
 
-            <!-- Contact -->
-            <a href="./contact.html" class="loginLink">
-                <button type="button" class="login">Contact</button>
-            </a>
-            <!-- Contact -->
+                <!-- Contact -->
+                <a href="./contact.php" class="loginLink">
+                    <button type="button" class="login">Contact</button>
+                </a>
+                <!-- Contact -->
 
                     <div class="navbar__btn">
                         <div class="bar bar1"></div>
@@ -56,45 +55,28 @@
                 <ul class="navbar__links">
                     <!-- single link -->
                     <li>
-                        <a href="./index.html" class="navbar__single-link">
+                        <a href="./index.php" class="navbar__single-link">
                         <i class="fas fa-home"></i>home
                     </a>
                 </li>
                 <!-- single link -->
                 <li>
-                        <a href="./calc.html" class="navbar__single-link">
+                        <a href="./calc.php" class="navbar__single-link">
                         <i class="fas fa-calculator"></i>calculator
                     </a>
                 </li>
                 <!-- single link -->
                 <li>
-                        <a href="./counter.html" class="navbar__single-link">
+                        <a href="./counter.php" class="navbar__single-link">
                         <i class="fas fa-sort-numeric-up"></i>counter
                     </a>
                 </li>
                    <!-- single link -->
                    <li>
-                        <a href="./todo.html" class="navbar__single-link">
+                        <a href="./todo.php" class="navbar__single-link">
                         <i class="fas fa-list-ol"></i>to-do list
                         </a>
                     </li>
                 </ul>
             </nav>
-
-            <div class="loginbox">
-                <h1>Login</h1>
-                <form>
-                    <p>Username</p>
-                    <input type="text" name="" placeholder="Enter Username" required>
-                    <p>Password</p>
-                    <input type="password" name="" placeholder="Enter Password" required>
-                    <input type="submit" name="" value="LOGIN"><br>
-                    <a href="#">Forgot password?</a><br>
-                    <a href="#">Don't have an account?</a>
-                </form>
-            </div>
-
-
-    <script src="../js/login.js"></script>
-</body>
-</html>
+</header>

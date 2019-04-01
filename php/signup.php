@@ -42,3 +42,5 @@
 <?php
     require "footer.php";
 ?>
+
+<script src="../js/login.js"></script>

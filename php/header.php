@@ -12,7 +12,7 @@
 
     <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
 
-    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 </head>
@@ -22,10 +22,7 @@
                 <div class="navbar__header">
                         <a href="./index.php" id="logoo"><h1 id="myLogo">Daniel Blindheim</h1></a>
 
-             <!-- Social Media -->
-             <a href="https://www.facebook.com/daniel.blindheim" target="_blank">
-                <i class="fab fa-facebook socialM"><br>Facebook</i>
-                    </a>
+                <!-- Social Media -->
                     <a href="https://twitter.com/DBlindheim" target="_blank">
                 <i class="fab fa-twitter socialM"><br>Twitter</i>
                     </a>
@@ -35,9 +32,17 @@
                 <!-- Social Media -->
 
                 <!-- Login -->
-                <a href="./login.php" class="loginLink">
-                    <button type="button" class="login" id="login">Login</button>
-                </a>
+                <?php
+            if (isset($_SESSION["userId"])) {
+                echo '<a href="./login.php" class="loginLink">
+                <button type="button" class="login" id="login">Logout</button>
+            </a>';
+            } else {
+                echo '<a href="./login.php" class="loginLink">
+                <button type="button" class="login" id="login">Login</button>
+            </a>';
+            }
+        ?>
                 <!-- Login -->
 
                 <!-- Contact -->
@@ -79,4 +84,4 @@
                     </li>
                 </ul>
             </nav>
-</header>
+    </header>

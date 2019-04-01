@@ -9,7 +9,6 @@
 
     <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
 
-    <link rel="stylesheet" href="../css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 </head>
@@ -25,7 +24,7 @@
 
 
 
-    <div class="container">
+    <div class="indexcontainer">
             <!-- <h2 id="quotesBy">quotes by famous people</h2> -->
              <blockquote>
                  <h2 id="quote">quote</h2>

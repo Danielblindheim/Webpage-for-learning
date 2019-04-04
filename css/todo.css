@@ -37,11 +37,9 @@ p {
     color: #ffffff;
     text-transform: capitalize;
     font-weight: 600;
-    /*border: 2px solid #6baa75;*/
     border: 2px solid #fff;
     border-radius: 5px;
     margin-bottom: 5px;
-    /*background: #545454;*/
     background: grey;
     opacity: 0.8;
     transition: all 0.75s ease;
@@ -53,7 +51,6 @@ p {
     margin-right: 23%;
 }
 #todo li:hover {
-    /*background: #3f3d3d;*/
     opacity: 1;
     cursor: pointer;
 }

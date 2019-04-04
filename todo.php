@@ -10,7 +10,7 @@
     <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/todo.css">
+    <link rel="stylesheet" href="./css/todo.css?<?php echo time(); ?>"> <!-- Lagt til timestamp sann at den ikkje loada css fra cache.-->
     <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
 </head>
 <body>
